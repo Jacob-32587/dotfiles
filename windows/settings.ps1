@@ -1,3 +1,5 @@
+Invoke-expression ".\rustup-init.exe --profile default --quiet -y"
+
 codium --user-data-dir .vscode
 
 codium --install-extension abusaidm.html-snippets

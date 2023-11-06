@@ -756,5 +756,23 @@ $env.config = {
     ]
 }
 
+# Custom
+
+alias git_status_help = echo [ 
+    [Symbol, Meaning];
+    ['=', 'Merge conflicts'],
+    ['>', Ahead],
+    ['<', Behind],
+    ['<>', Diverged],
+    ['', Up-to-date],
+    ['?', Untracked],
+    ['$', Stashed],
+    ['!', Modified],
+    ['+', Staged],
+    ['r', Renamed],
+    ['x', Deleted],
+]
+
+
 use ~/.cache/starship/init.nu
 source ~/.cache/carapace/init.nu

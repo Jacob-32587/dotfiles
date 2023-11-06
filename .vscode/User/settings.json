@@ -1,0 +1,30 @@
+{
+    "indentRainbow.colors": [
+        "rgba(255,255,64,0.07)",
+        "rgba(127,255,127,0.07)",
+        "rgba(255,127,255,0.07)",
+        "rgba(79,236,236,0.07)"
+    ],
+    "indentRainbow.indentSetter": {},
+    "indentRainbow.indicatorStyle": "light",
+    "indentRainbow.lightIndicatorStyleLineWidth": 2,
+    "editor.renderWhitespace": "all",
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "hediet.vscode-drawio.resizeImages": null,
+    "latex-workshop.latex.magic.args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%",
+        "-shell-escape"
+    ],
+    "latex-workshop.latex.external.build.args": [
+        "-shell-escape"
+    ],
+    "workbench.editor.tabSizing": "shrink",
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.colorTheme": "Bearded Theme Arc Reversed",
+}

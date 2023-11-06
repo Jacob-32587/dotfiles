@@ -1,4 +1,6 @@
-.vscode/*
-!.vscode/keybindings.json
-!.vscode/settings.json
+.vscode/**
+.backup/**
+!.vscode/User
+!.vscode/User/keybindings.json
+!.vscode/User/settings.json
 !.vscode/Preferences

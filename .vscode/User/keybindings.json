@@ -1,0 +1,59 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+alt+z",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "-workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "ctrl+shift+alt+right",
+        "command": "cursorLineEndSelect"
+    },
+    {
+        "key": "ctrl+shift+alt+left",
+        "command": "cursorLineStartSelect"
+    },
+    {
+        "key": "ctrl+alt+right",
+        "command": "cursorLineEnd"
+    },
+    {
+        "key": "ctrl+alt+left",
+        "command": "cursorLineStart"
+    },
+    {
+        "key": "ctrl+alt+l",
+        "command": "editor.action.transformToLowercase"
+    },
+    {
+        "key": "ctrl+alt+u",
+        "command": "editor.action.transformToUppercase"
+    },
+    {
+        "key": "ctrl+n ctrl+f",
+        "command": "explorer.newFile"
+    },
+    {
+        "key": "ctrl+n ctrl+d",
+        "command": "explorer.newFolder"
+    },
+    {
+        "key": "ctrl+shift+t ctrl+shift+t",
+        "command": "editor.action.indentationToTabs"
+    },
+    { 
+        "key": "ctrl+alt+down",
+        "command": "editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    { 
+        "key": "ctrl+alt+up",
+        "command": "editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+]

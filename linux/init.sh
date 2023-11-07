@@ -57,6 +57,10 @@ bash codium-setup.sh &
 # Install curl
 sudo apt install curl
 
+# Instal NVM (node version manager)
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash &
+
 # Install rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | bash -s -- -y &
 pids+=( $! )
@@ -95,6 +99,8 @@ wait $cmake_pid
 add_script_if_not_exist '.dotfiles/linux/dotfile_path_config.sh'
 
 source_files
+
+nvm install node &
 
 cargo install starship --locked &
 pids+=( $! )

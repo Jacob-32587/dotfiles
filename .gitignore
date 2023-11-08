@@ -1,7 +1,7 @@
 .vscode/**
 .backup/**
+nushell/history.txt
 !.vscode/User
 !.vscode/User/keybindings.json
 !.vscode/User/settings.json
 !.vscode/Preferences
-nushell/history.txt

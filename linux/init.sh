@@ -20,6 +20,8 @@ gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-right "['']" &
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['']" &
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['']" &
 
+sudo apt install build-essential
+
 # Install VSCodium
 wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg \
     | gpg --dearmor \
@@ -61,27 +63,36 @@ sudo apt install curl
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash &
 
-# Install rust
+rustup --version
+
+# Install rust if rustup command not found
+if [ ! $? -eq 0 ] ; then
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | bash -s -- -y &
 pids+=( $! )
+fi
 
-# Install Nushell
+nu --version
+
+# Install Nushell if nu command not found
+if [ ! $? -eq 0 ] ; then
 curl --proto '=https' --tlsv1.2 -L https://github.com/nushell/nushell/releases/download/0.86.0/nu-0.86.0-x86_64-linux-gnu-full.tar.gz --output nushell.tar.gz &
 pids+=( $! )
+fi
 
 # Install Carapace
-if [ -d "/etc/apt/sources.list.d/fury.list" ] ;
+if [[ ! -f '/etc/apt/sources.list.d/fury.list' ]] ;
 then
     sudo touch 'fury.list'
     sudo chmod 777 fury.list
     sudo echo 'deb [trusted=yes] https://apt.fury.io/rsteube/ /' >> 'fury.list'
     sudo chmod 644 fury.list
     sudo mv 'fury.list' '/etc/apt/sources.list.d/'
+
+    sudo apt-get update
+    sudo apt-get install carapace-bin
+    pids+=( $! )
 fi
 
-sudo apt-get update
-sudo apt-get install carapace-bin
-pids+=( $! )
 
 # wait for all collected pids
 for pid in ${pids[*]}; do
@@ -102,7 +113,7 @@ source_files
 
 nvm install node &
 
-cargo install starship --locked &
+cargo install starship &
 pids+=( $! )
 
 wait

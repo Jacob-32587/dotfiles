@@ -773,6 +773,7 @@ alias git_status_help = echo [
     ['x', Deleted],
 ]
 
+alias weather = curl wttr.in
 
 use ~/.cache/starship/init.nu
 source ~/.cache/carapace/init.nu

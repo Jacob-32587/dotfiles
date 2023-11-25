@@ -1,6 +1,6 @@
-# #!/bin/bash
-# set -v
-# apt-get update
+#!/bin/bash
+set -v
+apt-get update
 source ./functions.sh
 
 # Create symbolic links for config dirs

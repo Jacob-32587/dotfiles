@@ -22,6 +22,9 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['']" 
 
 sudo apt install build-essential
 
+# Neovim build dep
+sudo apt-get install gettext
+
 # Install VSCodium
 wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg \
     | gpg --dearmor \
@@ -111,9 +114,41 @@ add_script_if_not_exist '.dotfiles/linux/dotfile_path_config.sh'
 
 source_files
 
+cd ~
+
+# Clone neovim 0.9
+git clone -b release-0.9 https://github.com/neovim/neovim.git &
+
+# Download nerd font
+curl --proto '=https' --tlsv1.2 -L https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.0/Gohu.zip --output Gohu.zip &
+
+# Make font directory
+mkdir ~/.fonts &
+
+# Install node
 nvm install node &
 
+# Install starship for nushell
 cargo install starship &
-pids+=( $! )
 
+# Install latex
+
+sudo apt install texlive-latex-extra
+
+sudo apt install texlive-extra-utils
+
+# Wait on all pending installs
 wait
+
+# Unzip downloaded font
+unzip Gohu.zip -/.fonts
+
+# Reload system fonts
+fc-cache -f -v
+
+# Build neovim
+cd neovim
+make CMAKE_BUILD_TYPE=RelWithDebInfo
+sudo make install
+
+

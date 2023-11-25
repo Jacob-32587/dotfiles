@@ -27,4 +27,13 @@
     "editor.detectIndentation": false,
     "security.workspace.trust.untrustedFiles": "open",
     "workbench.colorTheme": "Bearded Theme Arc Reversed",
+    "editor.rulers": [
+        {
+            "color": "#ffffff22",
+            "column": 110
+        }
+    ],
+    "rust-analyzer.check.command": "clippy",
+    "explorer.confirmDelete": false,
+    "editor.inlayHints.enabled": "offUnlessPressed"
 }

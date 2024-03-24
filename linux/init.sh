@@ -11,14 +11,14 @@ backup_and_create_ln "$HOME/.dotfiles/nushell" "$HOME/.config"
 pids=()
 
 # Remove gnome keybinds, these were extremely annoying to find
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up "['']" &
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down "['']" &
-gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-up "['']" &
-gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-down "['']" &
-gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-left "['']" &
-gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-right "['']" &
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['']" &
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['']" &
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up "['']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down "['']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-up "['']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-down "['']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-left "['']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-right "['']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['']"
 
 sudo apt install build-essential
 
@@ -38,7 +38,7 @@ sudo apt install codium
 # Install CMake (if not already installed)
 cmake --version
 if [[ ! $? -eq 0 ]] ; then
-    bash cmake_install.sh &
+    bash cmake_install.sh
     cmake_pid=$!
 fi
 
@@ -54,23 +54,23 @@ sudo apt install neovim
 yes | sudo apt-get install libreoffice
 
 # Install Clang 17
-sudo bash -c "$(wget -O - https://apt.llvm.org/llvm.sh)"
+sudoe bash -c "$(wget -O - https://apt.llvm.org/llvm.sh)"
 
-# Setup VSCodium settings
-bash codium-setup.sh &
+# Setup VSCodium settengs
+bash codium-setup.sh
 
 # Install curl
 sudo apt install curl
 
 # Instal NVM (node version manager)
 
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash &
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 
 rustup --version
 
 # Install rust if rustup command not found
 if [ ! $? -eq 0 ] ; then
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | bash -s -- -y &
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | bash -s -- -y
 pids+=( $! )
 fi
 
@@ -117,19 +117,19 @@ source_files
 cd ~
 
 # Clone neovim 0.9
-git clone -b release-0.9 https://github.com/neovim/neovim.git &
+git clone -b release-0.9 https://github.com/neovim/neovim.git
 
 # Download nerd font
 curl --proto '=https' --tlsv1.2 -L https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.0/Gohu.zip --output Gohu.zip &
 
 # Make font directory
-mkdir ~/.fonts &
+mkdir ~/.fonts
 
 # Install node
-nvm install node &
+nvm install node
 
 # Install starship for nushell
-cargo install starship &
+cargo install starship
 
 # Install latex
 

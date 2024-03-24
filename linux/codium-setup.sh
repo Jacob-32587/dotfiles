@@ -1,13 +1,15 @@
 #!/bin/bash
 . ./functions.sh
 
-backup_and_create_ln "$HOME/.dotfiles/.vscode" "$HOME/.config/VSCodium"
+backup_and_create_ln "$HOME/.dotfiles/VSCodium/User" "$HOME/.config/VSCodium"
 
+codium --force --install-extension ms-azuretools.vscode-docker &
+codium --force --install-extension drcika.apc-extension &
 codium --force --install-extension TheNuProjectContributors.vscode-nushell-lang-1.7.1.vsix &
 codium --force --install-extension abusaidm.html-snippets &
 codium --force --install-extension antfu.browse-lite &
 codium --force --install-extension antfu.vite &
-codium --force --install-extension BeardedBear.beardedtheme &
+codium --force --install-extensione BeardedBear.beardedtheme &
 codium --force --install-extension bungcip.better-toml &
 codium --force --install-extension donjayamanne.githistory &
 codium --force --install-extension ecmel.vscode-html-css &
@@ -29,5 +31,7 @@ codium --force --install-extension vadimcn.vscode-lldb &
 codium --force --install-extension Vue.volar &
 codium --force --install-extension xabikos.JavaScriptSnippets &
 codium --force --install-extension yoavbls.pretty-ts-errors &
+
+sudo chown -R $(whoami) /usr/share/codium
 
 wait

@@ -2,12 +2,13 @@
     "userDataProfilesMigration": true,
     "profileAssociations": {
         "workspaces": {
-            "file:///home/j32587/.dotfiles": "__default__profile__",
-            "file:///home/j32587/Documents/Toledo": "__default__profile__"
+            "file:///home/j32587/Documents/Toledo": "__default__profile__",
+            "file:///home/j32587/.dotfiles": "__default__profile__"
         },
         "emptyWindows": {
             "1711331536677": "__default__profile__",
-            "1711331634550": "__default__profile__"
+            "1711331634550": "__default__profile__",
+            "1711389899392": "__default__profile__"
         }
     },
     "profileAssociationsMigration": true,
@@ -29,6 +30,9 @@
             },
             {
                 "backupFolder": "1711331634550"
+            },
+            {
+                "backupFolder": "1711389899392"
             }
         ]
     },
@@ -79,23 +83,23 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/j32587/Documents/Toledo",
-                                        "path": "/home/j32587/Documents/Toledo",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/Toledo"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
                                         "external": "file:///home/j32587/.dotfiles",
                                         "path": "/home/j32587/.dotfiles",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
                                     "label": "~/.dotfiles"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/j32587/Documents/Toledo",
+                                        "path": "/home/j32587/Documents/Toledo",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Toledo"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -1033,7 +1037,8 @@
                     },
                     {
                         "id": "workbench.action.debug.configure",
-                        "label": "Open &&Configurations"
+                        "label": "Open &&Configurations",
+                        "enabled": false
                     },
                     {
                         "id": "debug.addConfiguration",
@@ -1721,16 +1726,39 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/j32587/Documents/Toledo",
-            "backupPath": "/home/j32587/.config/VSCodium/Backups/5e81ce9ac49e68b1dd7bd51cee9e2a4d",
+            "folder": "file:///home/j32587/.dotfiles",
+            "backupPath": "/home/j32587/.config/VSCodium/Backups/d07020304af32bd4d1ee361d96bf355c",
             "uiState": {
                 "mode": 0,
-                "x": -25,
-                "y": 1270,
-                "width": 1904,
-                "height": 491
+                "x": 448,
+                "y": 1273,
+                "width": 1024,
+                "height": 768
             }
         },
-        "openedWindows": []
+        "openedWindows": [
+            {
+                "folder": "file:///home/j32587/Documents/Toledo",
+                "backupPath": "/home/j32587/.config/VSCodium/Backups/5e81ce9ac49e68b1dd7bd51cee9e2a4d",
+                "uiState": {
+                    "mode": 0,
+                    "x": -25,
+                    "y": 1270,
+                    "width": 1904,
+                    "height": 491
+                }
+            },
+            {
+                "folder": "file:///home/j32587/.dotfiles",
+                "backupPath": "/home/j32587/.config/VSCodium/Backups/d07020304af32bd4d1ee361d96bf355c",
+                "uiState": {
+                    "mode": 0,
+                    "x": 448,
+                    "y": 1273,
+                    "width": 1024,
+                    "height": 768
+                }
+            }
+        ]
     }
 }

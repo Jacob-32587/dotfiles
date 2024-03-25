@@ -135,7 +135,7 @@ cargo install starship
 
 # Install latex
 
-sudo apt-get install texlive-full
+sudo apt isntall texlive-latexmk
 
 sudo apt install texlive-latex-extra
 

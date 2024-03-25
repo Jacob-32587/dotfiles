@@ -1,7 +1,7 @@
-.VSCodium/**
+VSCodium/**
 .backup/**
 nushell/history.txt
-!.VSCodium/User
-!.VSCodium/User/keybindings.json
-!.VSCodium/User/settings.json
-!.VSCodium/Preferences
+!VSCodium/User
+!VSCodium/User/keybindings.json
+!VSCodium/User/settings.json
+!VSCodium/Preferences

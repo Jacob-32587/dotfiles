@@ -2,9 +2,13 @@
     "userDataProfilesMigration": true,
     "profileAssociations": {
         "workspaces": {
-            "file:///home/j32587/.dotfiles": "__default__profile__"
+            "file:///home/j32587/.dotfiles": "__default__profile__",
+            "file:///home/j32587/Documents/Toledo": "__default__profile__"
         },
-        "emptyWindows": {}
+        "emptyWindows": {
+            "1711331536677": "__default__profile__",
+            "1711331634550": "__default__profile__"
+        }
     },
     "profileAssociationsMigration": true,
     "telemetry.sqmId": "",
@@ -14,9 +18,19 @@
         "folders": [
             {
                 "folderUri": "file:///home/j32587/.dotfiles"
+            },
+            {
+                "folderUri": "file:///home/j32587/Documents/Toledo"
             }
         ],
-        "emptyWindows": []
+        "emptyWindows": [
+            {
+                "backupFolder": "1711331536677"
+            },
+            {
+                "backupFolder": "1711331634550"
+            }
+        ]
     },
     "lastKnownMenubarData": {
         "menus": {
@@ -60,6 +74,17 @@
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/j32587/Documents/Toledo",
+                                        "path": "/home/j32587/Documents/Toledo",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Toledo"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -109,13 +134,11 @@
                     },
                     {
                         "id": "workbench.action.files.save",
-                        "label": "&&Save",
-                        "enabled": false
+                        "label": "&&Save"
                     },
                     {
                         "id": "workbench.action.files.saveAs",
-                        "label": "Save &&As...",
-                        "enabled": false
+                        "label": "Save &&As..."
                     },
                     {
                         "id": "saveAll",
@@ -258,13 +281,11 @@
                     },
                     {
                         "id": "workbench.action.files.revert",
-                        "label": "Re&&vert File",
-                        "enabled": false
+                        "label": "Re&&vert File"
                     },
                     {
                         "id": "workbench.action.closeActiveEditor",
-                        "label": "&&Close Editor",
-                        "enabled": false
+                        "label": "&&Close Editor"
                     },
                     {
                         "id": "workbench.action.closeFolder",
@@ -313,13 +334,11 @@
                     },
                     {
                         "id": "actions.find",
-                        "label": "&&Find",
-                        "enabled": false
+                        "label": "&&Find"
                     },
                     {
                         "id": "editor.action.startFindReplaceAction",
-                        "label": "&&Replace",
-                        "enabled": false
+                        "label": "&&Replace"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -617,8 +636,7 @@
                                 },
                                 {
                                     "id": "editor.action.toggleStickyScroll",
-                                    "label": "&&Sticky Scroll",
-                                    "checked": true
+                                    "label": "&&Sticky Scroll"
                                 },
                                 {
                                     "id": "editor.action.toggleRenderWhitespace",
@@ -779,8 +797,7 @@
                     },
                     {
                         "id": "editor.action.toggleWordWrap",
-                        "label": "&&Word Wrap",
-                        "enabled": false
+                        "label": "&&Word Wrap"
                     }
                 ]
             },
@@ -788,8 +805,7 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Back",
-                        "enabled": false
+                        "label": "&&Back"
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -798,8 +814,7 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location",
-                        "enabled": false
+                        "label": "&&Last Edit Location"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1018,8 +1033,7 @@
                     },
                     {
                         "id": "workbench.action.debug.configure",
-                        "label": "Open &&Configurations",
-                        "enabled": false
+                        "label": "Open &&Configurations"
                     },
                     {
                         "id": "debug.addConfiguration",
@@ -1707,14 +1721,14 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/j32587/.dotfiles",
-            "backupPath": "/home/j32587/.config/VSCodium/Backups/d07020304af32bd4d1ee361d96bf355c",
+            "folder": "file:///home/j32587/Documents/Toledo",
+            "backupPath": "/home/j32587/.config/VSCodium/Backups/5e81ce9ac49e68b1dd7bd51cee9e2a4d",
             "uiState": {
-                "mode": 1,
-                "x": 282,
-                "y": 1320,
-                "width": 1452,
-                "height": 768
+                "mode": 0,
+                "x": -25,
+                "y": 1270,
+                "width": 1904,
+                "height": 491
             }
         },
         "openedWindows": []

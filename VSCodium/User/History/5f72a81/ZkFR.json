@@ -1,0 +1,42 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "IterRecursiveComp",
+            "request": "launch",
+            "mainClass": "IterRecursiveComp",
+            "projectName": "2500-Assignment3"
+        },
+        {
+            "type": "java",
+            "name": "ShoppingBagTester",
+            "request": "launch",
+            "mainClass": "ShoppingBagTester",
+            "projectName": "2500-Assignment1"
+        },
+        {
+            "type": "java",
+            "name": "StackDriver",
+            "request": "launch",
+            "mainClass": "StackDriver",
+            "projectName": "2500-Assignment2-Problem1"
+        },
+        {
+            "type": "java",
+            "name": "AmusementParkDemo",
+            "request": "launch",
+            "mainClass": "AmusementParkDemo",
+            "projectName": "2500-Assignment4"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        }
+    ] 
+}

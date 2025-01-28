@@ -1,0 +1,22 @@
+#!/bin/bash
+dir_path="$PWD"
+make "$@"
+while [ $# -gt 0 ]; do
+  case "$1" in
+    --km-directory|-km-dir)
+      dir_path="$2"
+      ;;
+    *)
+      printf "illegal option: %s\n" "$1" >&2
+      echo "$usage" >&2
+      exit 1
+      ;;
+  esac
+  shift
+  shift
+done
+modules=$(ls "$PWD" | grep ".ko$")
+
+for module in $modules; do
+    sign-kernel-module $module
+done

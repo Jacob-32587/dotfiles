@@ -21,16 +21,16 @@ backup_and_create_ln() {
 # on the path, if these checks pass it will be added to the PATH
 # $1 = path_to_directory (the root dir is $HOME)
 add_to_path_env() {
-    if [ -d "$HOME/$1" ] ;
+    if [ -d "$1" ] ;
     then
-        if [[ "$HOME/$1" == *"$PATH"* ]];
+        if [[ "$1" == *"$PATH"* ]];
         then
-            echo "Dir already defined on the path: $HOME/$1"
+            echo "Dir already defined on the path: $1"
         else
-            export PATH="$HOME/$1:$PATH"
+            export PATH="$1:$PATH"
         fi
     else
-        echo "Dir does not exist: $HOME/$1"
+        echo "Dir does not exist: $1"
     fi
 }
 
@@ -40,14 +40,14 @@ add_script_if_not_exist() {
     if [ -f "$HOME/$1" ] ; then
         local script_path=". \"\$HOME/$1\""
         # Check for .profiles files, add script path when/if one is found
-        if [ -f "$HOME/.profile" ] ;
+        if [ -f "$HOME/.bashrc" ] ;
         then
-            if grep -Fxq -e "$script_path" "$HOME/.profile" ;
+            if grep -Fxq -e "$script_path" "$HOME/.bashrc" ;
             then
-                echo "Script already added to .profile: $1"
+                echo "Script already added to .bashrc: $1"
             else
-                echo $script_path >> "$HOME/.profile"
-                source "$HOME/.profile"
+                echo $script_path >> "$HOME/.bashrc"
+                source "$HOME/.bashrc"
             fi
         elif [ -f "$HOME/.bash_profile"] ;
         then
@@ -58,15 +58,16 @@ add_script_if_not_exist() {
                 echo $script_path >> "$HOME/.bash_profile"
                 source "$HOME/.bash_profile"
             fi
-        elif [ -f "$HOME/.bashrc" ] ;
+        elif [ -f "$HOME/.profile" ] ;
         then
-            if grep -Fxq -e "$script_path" "$HOME/.bashrc" ;
+            if grep -Fxq -e "$script_path" "$HOME/.profile" ;
             then
-                echo "Script already added to .bashrc: $1"
+                echo "Script already added to .profile: $1"
             else
-                echo $script_path >> "$HOME/.bashrc"
-                source "$HOME/.bashrc"
+                echo $script_path >> "$HOME/.profile"
+                source "$HOME/.profile"
             fi
+	
         else
             echo "Could not find .profile, .bash_profile, or .bashrc"
         fi

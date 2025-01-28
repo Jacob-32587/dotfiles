@@ -7,7 +7,9 @@ export NVM_DIR="$HOME/.nvm"
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 source "$SCRIPT_DIR/functions.sh"
 
-add_to_path_env ".nushell"
+add_to_path_env "$HOME/.nushell"
+add_to_path_env "/opt/nvim-linux64/bin"
+add_to_path_env "$HOME/.dotfiles/shell-scripts/global_scripts"
 
 # Aliases
 alias pretty_path_var="echo \"${PATH//:/$'\n'}\""

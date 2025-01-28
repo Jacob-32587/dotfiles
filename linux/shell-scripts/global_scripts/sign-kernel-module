@@ -1,0 +1,2 @@
+#!/bin/bash
+/usr/src/linux-headers-$(uname -r)/scripts/sign-file sha512 ~/Code/shell/keys/signing_key.pem ~/Code/shell/keys/signing_key.x509 $1

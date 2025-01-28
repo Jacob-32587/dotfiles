@@ -5,3 +5,6 @@ nushell/history.txt
 !VSCodium/User/keybindings.json
 !VSCodium/User/settings.json
 !VSCodium/Preferences
+linux/shell-scripts/keys/signing_key.x509
+linux/shell-scripts/keys/signing_key.der
+linux/shell-scripts/keys/signing_key.pem

@@ -1,4 +1,5 @@
 # How to use
+- Clone into your home directory, ensure that the top level directory name it `.dotfiles`
 - From the `linux` directory run `bash init.sh`
 - Wait for install to finish
 

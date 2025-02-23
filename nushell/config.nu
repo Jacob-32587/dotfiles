@@ -773,6 +773,14 @@ alias git_status_help = echo [
     ['x', Deleted],
 ]
 
+# if (which tmux | length) != 0 and  ( env TMUX | length) == 0 {
+#     tmux
+# }
+
+def tmux_docker [] {
+    tmux new-session -d 'docker stats'
+}
+
 alias weather = curl wttr.in
 
 use ~/.cache/starship/init.nu

@@ -11,6 +11,7 @@
         "rgba(255,127,255,0.07)",
         "rgba(79,236,236,0.07)"
     ],
+    "grammarly.files.include": ["**/README.md", "**/readme.md", "**/*.txt", "**/*.tex"],
     "csharp.format.enable": false,
     "indentRainbow.indentSetter": {},
     "indentRainbow.indicatorStyle": "light",
@@ -170,7 +171,7 @@
     ],
     "explorer.confirmDelete": false,
     "editor.inlayHints.enabled": "offUnlessPressed",
-    "editor.fontFamily": "GohuFont 11 Nerd Font Mono",
+    "editor.fontFamily": "GohuFont uni11 Nerd Font Mono",
     "rust-analyzer.check.command": "clippy",
     "crates.compatibleDecorator": "",
     "crates.incompatibleDecorator": " ${version}",
@@ -221,7 +222,6 @@
     "workbench.editorAssociations": {
         "*.docx": "default"
     },
-    "workbench.activityBar.location": "hidden",
     "editor.minimap.autohide": true,
     "files.exclude": {
         "**/*.aux": true,
@@ -236,6 +236,7 @@
         "chrono",
         "openapi",
         "Phasor",
+        "rustls",
         "utoipa"
     ],
     "grunt.autoDetect": "on",
@@ -265,7 +266,7 @@
         // "focusBorder": "#00000000",
         // "foreground": "#00000000",
         "widget.shadow": "#00000000",
-        "selection.background": "#00000022",
+        "selection.background": "#55555599",
         "focusBorder": "#00000011",
         // "descriptionForeground": "#00000000",
         // "errorForeground": "#00000000",
@@ -310,8 +311,8 @@
         // "checkbox.background": "#ff0000",
 
         "terminal.dropBackground": "#00000000",
-        "terminal.findMatchBackground": "#0c0c0c00",
-        "terminal.selectionBackground": "#00000000",
+        // "terminal.findMatchBackground": "#0c0c0c00",
+        // "terminal.selectionBackground": "#00000000",
         "terminalCommandDecoration.defaultBackground": "#00000000",
 
         "terminal.border": "#00000000",
@@ -471,5 +472,11 @@
     },
     "omnisharp.useEditorFormattingSettings": false,
     "omnisharp.enableEditorConfigSupport": false,
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+    "clangd.path": "/home/j32587/.config/VSCodium/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/17.0.3/clangd_17.0.3/bin/clangd",
+    "editor.largeFileOptimizations": false,
+    "workbench.activityBar.location": "top",
+    "hediet.vscode-drawio.theme": "dark",
+    "workbench.preferredHighContrastColorTheme": "Default Dark Modern",
+    "dart.flutterSdkPath": "/home/j32587/development/flutter"
 }

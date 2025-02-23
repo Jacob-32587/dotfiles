@@ -1,6 +1,11 @@
- export USER="j32587"
- export privkey="signing_key.pem"
- export pubkey="signing_key.x509"
+export USER="j32587"
+export privkey="signing_key.pem"
+export pubkey="signing_key.x509"
+
+if ! command -v mokutil 2>&1 >/dev/null
+then
+  sudo apt install mokutil
+fi
 
 # Generate signing key for kernel modules
 openssl req -new -x509 -newkey rsa:4096 \
@@ -12,6 +17,6 @@ openssl req -new -x509 -newkey rsa:4096 \
 # Generate der file
 openssl x509 -in signing_key.x509 -outform der -out signing_key.der
 # import the signing key
-mokutil --import signing_key.der
+sudo mokutil --import signing_key.der
 
 # Follow this to learn more: https://en.opensuse.org/openSUSE:UEFI#Signing_kernel_module_for_verification

@@ -10,6 +10,7 @@ source "$SCRIPT_DIR/functions.sh"
 add_to_path_env "$HOME/.nushell"
 add_to_path_env "/opt/nvim-linux64/bin"
 add_to_path_env "$HOME/.dotfiles/shell-scripts/global_scripts"
+add_to_path_env "$HOME/development/flutter/bin"
 
 # Aliases
 alias pretty_path_var="echo \"${PATH//:/$'\n'}\""

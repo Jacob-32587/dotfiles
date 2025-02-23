@@ -2,13 +2,38 @@
     "userDataProfilesMigration": true,
     "profileAssociations": {
         "workspaces": {
+            "file:///home/j32587/.dotfiles": "__default__profile__",
+            "file:///home/j32587/Code/Rust/itter_test_c": "__default__profile__",
+            "file:///home/j32587/Code/Rust": "__default__profile__",
+            "file:///home/j32587/Code/Rust/leet": "__default__profile__",
+            "file:///home/j32587/Documents/Toledo/Rust": "__default__profile__",
+            "file:///home/j32587/Documents/Toledo/Rust/LongestWord": "__default__profile__",
+            "file:///home/j32587/Documents/Toledo/Classes/Spring%202024/Linear%20Data%20Structures/Assignment7": "__default__profile__",
+            "file:///home/j32587/Code": "__default__profile__",
+            "file:///home/j32587/Code/Rust/json_parse": "__default__profile__",
+            "file:///home/j32587/Code/Rust/password_test": "__default__profile__",
+            "file:///home/j32587/.config/nvim/lua": "__default__profile__",
+            "file:///home/j32587/.config/nvim": "__default__profile__",
+            "file:///home/j32587": "__default__profile__",
+            "file:///home/j32587/Code/Rust/json_parse/food_data": "__default__profile__",
+            "file:///home/j32587/Code/Rust/net-pantry/net_pantry_api": "__default__profile__",
+            "file:///home/j32587/Code/Rust/net-pantry": "__default__profile__",
             "file:///home/j32587/Documents/Toledo": "__default__profile__",
-            "file:///home/j32587/.dotfiles": "__default__profile__"
+            "file:///home/j32587/Downloads/energia-1.8.10E23/projects": "__default__profile__",
+            "file:///home/j32587/Code/Embedded/Tiva": "__default__profile__",
+            "file:///home/j32587/tiva-dev": "__default__profile__",
+            "file:///home/j32587/sambashare/Toledo/Classes": "__default__profile__",
+            "file:///home/j32587/sambashare/Toledo/.git": "__default__profile__",
+            "file:///home/j32587/sambashare/Toledo": "__default__profile__",
+            "file:///home/j32587/Code/C%23/id-scanner": "__default__profile__",
+            "file:///home/j32587/Code/C%23/id-scanner/attenda_scan": "__default__profile__",
+            "file:///home/j32587/Code/Dart": "__default__profile__",
+            "file:///home/j32587/Code/Dart/attenda_scan": "__default__profile__"
         },
         "emptyWindows": {
-            "1711331536677": "__default__profile__",
-            "1711331634550": "__default__profile__",
-            "1711389899392": "__default__profile__"
+            "1739503339957": "__default__profile__",
+            "1739650858237": "__default__profile__",
+            "1739654188410": "__default__profile__"
         }
     },
     "profileAssociationsMigration": true,
@@ -18,21 +43,18 @@
         "workspaces": [],
         "folders": [
             {
-                "folderUri": "file:///home/j32587/.dotfiles"
+                "folderUri": "file:///home/j32587/.config/nvim"
             },
             {
-                "folderUri": "file:///home/j32587/Documents/Toledo"
+                "folderUri": "file:///home/j32587/Code/Rust/json_parse/food_data"
+            },
+            {
+                "folderUri": "file:///home/j32587/Code/Rust/net-pantry/net_pantry_api"
             }
         ],
         "emptyWindows": [
             {
-                "backupFolder": "1711331536677"
-            },
-            {
-                "backupFolder": "1711331634550"
-            },
-            {
-                "backupFolder": "1711389899392"
+                "backupFolder": "1739654188410"
             }
         ]
     },
@@ -51,6 +73,18 @@
                     {
                         "id": "workbench.action.newWindow",
                         "label": "New &&Window"
+                    },
+                    {
+                        "id": "submenuitem.OpenProfile",
+                        "label": "New Window with Profile",
+                        "submenu": {
+                            "items": [
+                                {
+                                    "id": "workbench.profiles.actions.createProfile",
+                                    "label": "New Profile..."
+                                }
+                            ]
+                        }
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -74,7 +108,8 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor"
+                                    "label": "&&Reopen Closed Editor",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -83,23 +118,224 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/j32587/.dotfiles",
-                                        "path": "/home/j32587/.dotfiles",
+                                        "external": "file:///home/j32587/sambashare/Toledo",
+                                        "path": "/home/j32587/sambashare/Toledo",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.dotfiles"
+                                    "label": "~/sambashare/Toledo"
                                 },
                                 {
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/j32587/Documents/Toledo",
-                                        "path": "/home/j32587/Documents/Toledo",
+                                        "external": "file:///home/j32587/Code/Dart/attenda_scan",
+                                        "path": "/home/j32587/Code/Dart/attenda_scan",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/Toledo"
+                                    "label": "~/Code/Dart/attenda_scan"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/j32587/Code/Dart",
+                                        "path": "/home/j32587/Code/Dart",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Code/Dart"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/j32587",
+                                        "path": "/home/j32587",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/home/j32587"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/j32587/Code/C%23/id-scanner/attenda_scan",
+                                        "path": "/home/j32587/Code/C#/id-scanner/attenda_scan",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Code/C#/id-scanner/attenda_scan"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/j32587/Code/C%23/id-scanner",
+                                        "path": "/home/j32587/Code/C#/id-scanner",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Code/C#/id-scanner"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/j32587/Code/Rust/net-pantry",
+                                        "path": "/home/j32587/Code/Rust/net-pantry",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Code/Rust/net-pantry"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/j32587/sambashare/Toledo/.git",
+                                        "path": "/home/j32587/sambashare/Toledo/.git",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/sambashare/Toledo/.git"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/j32587/sambashare/Toledo/Classes",
+                                        "path": "/home/j32587/sambashare/Toledo/Classes",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/sambashare/Toledo/Classes"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/j32587/tiva-dev",
+                                        "path": "/home/j32587/tiva-dev",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/tiva-dev"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/j32587/sambashare/Toledo/Classes/Spring_2025/Machine%20Learning/Lectures/Lecture_05a_KNN.pptm",
+                                        "path": "/home/j32587/sambashare/Toledo/Classes/Spring_2025/Machine Learning/Lectures/Lecture_05a_KNN.pptm",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/sambashare/Toledo/Classes/Spring_2025/Machine Learning/Lectures/Lecture_05a_KNN.pptm"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///tmp/qmv6W7aBS",
+                                        "path": "/tmp/qmv6W7aBS",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/tmp/qmv6W7aBS"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///tmp/qmvPZylaz",
+                                        "path": "/tmp/qmvPZylaz",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/tmp/qmvPZylaz"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/j32587/sambashare/Toledo/Classes/Spring_2025/Machine%20Learning/Homework/f",
+                                        "path": "/home/j32587/sambashare/Toledo/Classes/Spring_2025/Machine Learning/Homework/f",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/sambashare/Toledo/Classes/Spring_2025/Machine Learning/Homework/f"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/j32587/Downloads/SeniorDesignObjectiveTree.drawio.svg",
+                                        "path": "/home/j32587/Downloads/SeniorDesignObjectiveTree.drawio.svg",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Downloads/SeniorDesignObjectiveTree.drawio.svg"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/j32587/sambashare/Toledo/Classes/Spring_2025/Operating_Systems_and_Systems_Programming/Homework/Homework2/parse.c",
+                                        "path": "/home/j32587/sambashare/Toledo/Classes/Spring_2025/Operating_Systems_and_Systems_Programming/Homework/Homework2/parse.c",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/sambashare/Toledo/Classes/Spring_2025/Operating_Systems_and_Systems_Programming/Homework/Homework2/parse.c"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/j32587/Pictures/Wallpapers/rustup-init.sh",
+                                        "path": "/home/j32587/Pictures/Wallpapers/rustup-init.sh",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Pictures/Wallpapers/rustup-init.sh"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/j32587/sambashare/Toledo/Classes/Spring%202025/Operating%20Systems%20and%20Systems%20Programming/Homework/Homework1/Makefile",
+                                        "path": "/home/j32587/sambashare/Toledo/Classes/Spring 2025/Operating Systems and Systems Programming/Homework/Homework1/Makefile",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/sambashare/Toledo/Classes/Spring 2025/Operating Systems and Systems Programming/Homework/Homework1/Makefile"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/j32587/Code/img2art/test.lua",
+                                        "path": "/home/j32587/Code/img2art/test.lua",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Code/img2art/test.lua"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/j32587/sambashare/Toledo/Classes/Spring%202025/Senior%20Design%20I/Homework/homework1.tex",
+                                        "path": "/home/j32587/sambashare/Toledo/Classes/Spring 2025/Senior Design I/Homework/homework1.tex",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/sambashare/Toledo/Classes/Spring 2025/Senior Design I/Homework/homework1.tex"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -146,8 +382,7 @@
                     },
                     {
                         "id": "saveAll",
-                        "label": "Save A&&ll",
-                        "enabled": false
+                        "label": "Save A&&ll"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -158,19 +393,8 @@
                         "submenu": {
                             "items": [
                                 {
-                                    "id": "github.copyVscodeDevLinkFile",
-                                    "label": "Copy vscode.dev Link"
-                                },
-                                {
-                                    "id": "vscode.menubar.separator"
-                                },
-                                {
                                     "id": "workbench.profiles.actions.exportProfile",
                                     "label": "Export Profile (Default)..."
-                                },
-                                {
-                                    "id": "workbench.profiles.actions.importProfile",
-                                    "label": "Import Profile..."
                                 }
                             ]
                         }
@@ -188,47 +412,8 @@
                         "submenu": {
                             "items": [
                                 {
-                                    "id": "submenuitem.Profiles",
-                                    "label": "Profiles (Default)",
-                                    "submenu": {
-                                        "items": [
-                                            {
-                                                "id": "workbench.profiles.actions.profileEntry.__default__profile__",
-                                                "label": "Default",
-                                                "checked": true
-                                            },
-                                            {
-                                                "id": "vscode.menubar.separator"
-                                            },
-                                            {
-                                                "id": "workbench.profiles.actions.showProfileContents",
-                                                "label": "Show Profile Contents"
-                                            },
-                                            {
-                                                "id": "vscode.menubar.separator"
-                                            },
-                                            {
-                                                "id": "workbench.profiles.actions.createProfile",
-                                                "label": "Create Profile..."
-                                            },
-                                            {
-                                                "id": "workbench.profiles.actions.deleteProfile",
-                                                "label": "Delete Profile...",
-                                                "enabled": false
-                                            },
-                                            {
-                                                "id": "vscode.menubar.separator"
-                                            },
-                                            {
-                                                "id": "workbench.profiles.actions.exportProfile",
-                                                "label": "Export Profile..."
-                                            },
-                                            {
-                                                "id": "workbench.profiles.actions.importProfile",
-                                                "label": "Import Profile..."
-                                            }
-                                        ]
-                                    }
+                                    "id": "workbench.profiles.actions.manageProfiles",
+                                    "label": "&&Profiles"
                                 },
                                 {
                                     "id": "workbench.action.openSettings",
@@ -244,11 +429,11 @@
                                 },
                                 {
                                     "id": "workbench.action.openSnippets",
-                                    "label": "Configure User Snippets"
+                                    "label": "Configure Snippets"
                                 },
                                 {
                                     "id": "workbench.action.tasks.openUserTasks",
-                                    "label": "User Tasks"
+                                    "label": "Tasks"
                                 },
                                 {
                                     "id": "submenuitem.ThemesSubMenu",
@@ -290,10 +475,6 @@
                     {
                         "id": "workbench.action.closeActiveEditor",
                         "label": "&&Close Editor"
-                    },
-                    {
-                        "id": "workbench.action.closeFolder",
-                        "label": "Close &&Folder"
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -489,8 +670,7 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "&&Primary Side Bar",
-                                    "checked": true
+                                    "label": "&&Primary Side Bar"
                                 },
                                 {
                                     "id": "workbench.action.toggleAuxiliaryBar",
@@ -503,8 +683,7 @@
                                 },
                                 {
                                     "id": "workbench.action.togglePanel",
-                                    "label": "&&Panel",
-                                    "checked": true
+                                    "label": "&&Panel"
                                 },
                                 {
                                     "id": "toggle.toggleCustomTitleBar",
@@ -523,17 +702,21 @@
                                     "submenu": {
                                         "items": [
                                             {
-                                                "id": "workbench.action.activityBarLocation.side",
-                                                "label": "&&Side"
+                                                "id": "workbench.action.activityBarLocation.default",
+                                                "label": "&&Default"
                                             },
                                             {
                                                 "id": "workbench.action.activityBarLocation.top",
-                                                "label": "&&Top"
+                                                "label": "&&Top",
+                                                "checked": true
+                                            },
+                                            {
+                                                "id": "workbench.action.activityBarLocation.bottom",
+                                                "label": "&&Bottom"
                                             },
                                             {
                                                 "id": "workbench.action.activityBarLocation.hide",
-                                                "label": "&&Hidden",
-                                                "checked": true
+                                                "label": "&&Hidden"
                                             }
                                         ]
                                     }
@@ -544,9 +727,8 @@
                                     "submenu": {
                                         "items": [
                                             {
-                                                "id": "workbench.action.positionPanelBottom",
-                                                "label": "Bottom",
-                                                "checked": true
+                                                "id": "workbench.action.positionPanelTop",
+                                                "label": "Top"
                                             },
                                             {
                                                 "id": "workbench.action.positionPanelLeft",
@@ -555,6 +737,11 @@
                                             {
                                                 "id": "workbench.action.positionPanelRight",
                                                 "label": "Right"
+                                            },
+                                            {
+                                                "id": "workbench.action.positionPanelBottom",
+                                                "label": "Bottom",
+                                                "checked": true
                                             }
                                         ]
                                     }
@@ -635,7 +822,7 @@
                                 },
                                 {
                                     "id": "breadcrumbs.toggle",
-                                    "label": "&&Breadcrumbs",
+                                    "label": "Toggle &&Breadcrumbs",
                                     "checked": true
                                 },
                                 {
@@ -781,6 +968,17 @@
                         "id": "vscode.menubar.separator"
                     },
                     {
+                        "id": "workbench.panel.chat",
+                        "label": "&&Chat"
+                    },
+                    {
+                        "id": "workbench.panel.chatEditing",
+                        "label": "Copilot Ed&&its"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
                         "id": "workbench.actions.view.problems",
                         "label": "&&Problems"
                     },
@@ -801,7 +999,8 @@
                     },
                     {
                         "id": "editor.action.toggleWordWrap",
-                        "label": "&&Word Wrap"
+                        "label": "&&Word Wrap",
+                        "enabled": false
                     }
                 ]
             },
@@ -809,7 +1008,8 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Back"
+                        "label": "&&Back",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -818,7 +1018,8 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location"
+                        "label": "&&Last Edit Location",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1138,7 +1339,8 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Split Terminal"
+                        "label": "&&Split Terminal",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1211,6 +1413,10 @@
                     {
                         "id": "update.showCurrentReleaseNotes",
                         "label": "Show &&Release Notes"
+                    },
+                    {
+                        "id": "workbench.action.getStartedWithAccessibilityFeatures",
+                        "label": "Get Started with Accessibility Features"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1317,11 +1523,6 @@
             "workbench.action.closeActiveEditor": {
                 "label": "Ctrl+W",
                 "userSettingsLabel": "ctrl+w"
-            },
-            "workbench.action.closeFolder": {
-                "label": "Ctrl+K F",
-                "isNative": false,
-                "userSettingsLabel": "ctrl+k f"
             },
             "workbench.action.closeWindow": {
                 "label": "Alt+F4",
@@ -1499,6 +1700,14 @@
             "workbench.view.debug": {
                 "label": "Ctrl+Shift+D",
                 "userSettingsLabel": "ctrl+shift+d"
+            },
+            "workbench.panel.chat": {
+                "label": "Ctrl+Alt+I",
+                "userSettingsLabel": "ctrl+alt+i"
+            },
+            "workbench.panel.chatEditing": {
+                "label": "Ctrl+Shift+Alt+I",
+                "userSettingsLabel": "ctrl+shift+alt+i"
             },
             "workbench.actions.view.problems": {
                 "label": "Ctrl+Shift+M",
@@ -1705,13 +1914,17 @@
         "zoomLevel": 1,
         "baseTheme": "vs-dark",
         "colorInfo": {
-            "foreground": "#afbbd2",
+            "foreground": "#cccccc",
             "background": "#000000",
             "editorBackground": "rgba(0, 0, 0, 0)",
-            "titleBarBackground": "#181f2c",
+            "titleBarBackground": "#181818",
+            "titleBarBorder": "#ff0000",
             "activityBarBackground": "rgba(0, 0, 0, 0)",
+            "activityBarBorder": "#2b2b2b",
             "sideBarBackground": "rgba(0, 0, 0, 0)",
+            "sideBarBorder": "rgba(0, 0, 0, 0)",
             "statusBarBackground": "rgba(0, 0, 0, 0)",
+            "statusBarBorder": "rgba(0, 0, 0, 0)",
             "statusBarNoFolderBackground": "rgba(0, 0, 0, 0)"
         },
         "layoutInfo": {
@@ -1719,46 +1932,25 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
             "activityBarWidth": 0,
-            "sideBarWidth": 300,
+            "sideBarWidth": 0,
+            "auxiliarySideBarWidth": 0,
             "statusBarHeight": 22,
             "windowBorder": false
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/j32587/.dotfiles",
-            "backupPath": "/home/j32587/.config/VSCodium/Backups/d07020304af32bd4d1ee361d96bf355c",
+            "backupPath": "/home/j32587/.config/VSCodium/Backups/1739654188410",
             "uiState": {
-                "mode": 0,
-                "x": 448,
-                "y": 1273,
-                "width": 1024,
-                "height": 768
+                "mode": 1,
+                "x": 4177,
+                "y": 1356,
+                "width": 1200,
+                "height": 800,
+                "zoomLevel": 0
             }
         },
-        "openedWindows": [
-            {
-                "folder": "file:///home/j32587/Documents/Toledo",
-                "backupPath": "/home/j32587/.config/VSCodium/Backups/5e81ce9ac49e68b1dd7bd51cee9e2a4d",
-                "uiState": {
-                    "mode": 0,
-                    "x": -25,
-                    "y": 1270,
-                    "width": 1904,
-                    "height": 491
-                }
-            },
-            {
-                "folder": "file:///home/j32587/.dotfiles",
-                "backupPath": "/home/j32587/.config/VSCodium/Backups/d07020304af32bd4d1ee361d96bf355c",
-                "uiState": {
-                    "mode": 0,
-                    "x": 448,
-                    "y": 1273,
-                    "width": 1024,
-                    "height": 768
-                }
-            }
-        ]
-    }
+        "openedWindows": []
+    },
+    "telemetry.devDeviceId": "e80be269-813c-46fd-ab97-b3fb34f1024d"
 }
